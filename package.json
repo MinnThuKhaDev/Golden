@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2"
+  },
+  "name": "golden-ratio-calculator",
+  "version": "1.0.0",
+  "description": "You can calculate golden ratio, eagle ratio and diamond ratio by one click.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Minn Thu Kha",
+  "license": "ISC"
+}

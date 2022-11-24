@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ratio Calculator</title>
+    
+    <link rel="shortcut icon" href="/node_modules/bootstrap-icons/icons/calculator-fill.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="d-flex row">
+        <div class=" col-12  text-center">
+            <h1 class=" text-black-50 mt-4 mb-3">GoldenRatio</h1>
+        </div>
+        <div class="col-lg-6 col-md-10 col-sm-12 row p-3 mx-auto">
+
+            <!-- text input -->
+            <div id="text-area-container" class="input-group col-12 mb-4  ">
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control " aria-label="With textarea"></textarea>
+            </div>
+
+            <!-- minimum font size -->
+            <div class=" col-sm-12 col-md-6 col-lg-6 mb-4">
+                <input value="1" id="font-size" class="form-control form-control-lg" type="number" placeholder="minimum font size" aria-label=".form-control-lg example">
+            </div>
+
+            <!-- font size unit -->
+            <div class=" col-sm-12 col-md-6 col-lg-6 mb-4">
+                <select id="font-size-unit" class="form-select form-select-lg " aria-label=".form-select-lg example">
+                    <option value="px">px</option>
+                    <option value="rem">rem</option>
+                    <option value="em">em</option>
+                </select>
+            </div>
+
+            <!-- how many time -->
+            <div  class=" col-sm-12 col-md-6 col-lg-6 mb-4">
+                <input id="number-of-time" class="form-control form-control-lg" type="number" placeholder="how many time of font size" aria-label=".form-control-lg example">
+            </div>
+
+            
+            <!-- ratio -->
+            <div class=" col-12 col-md-6 col-lg-6 mb-4">
+            <select id="ratio" class="form-select form-select-lg" aria-label=".form-select-lg example">
+                <option value="1.618">Golden Ratio</option>
+                <option value="2.2">Eagle Ratio</option>
+                <option value="3">Diamont Ratio</option>
+            </select>
+            </div>
+
+            <!-- call to action button -->
+            <div class=" col-12 mb-4">
+            <button onclick="calculate ()" class="col-12 btn btn-lg btn-primary">Calculate</button>
+            </div>
+
+            <!-- result div -->
+            <div id="result_div" class=" p-3 bg-primary opacity-0"></div>
+
+        </div>
+    </div>
+</body>
+<script src="/js/app.js"></script>
+</html>
